@@ -9,7 +9,9 @@ if not os.path.exists('recalc'):
 
     # Parse with ASE.
         #write xyz file for each OUTCAR to concatenate later for offline training
-
+        
+i = 0
+        
 for n in range(1,318,1):
     os.chdir(f"frame_{n}")
     
@@ -28,3 +30,5 @@ for n in range(1,318,1):
         shutil.move(f"frame_{n}.xyz", "../recalc/")
 
     os.chdir("../")
+    print('successfully parsed frame', i) 
+    i += 1
