@@ -24,8 +24,6 @@ for atoms in atoms_list:
         new_atoms.info['stress'] = atoms.info['stress']
     if 'target_atoms' in atoms.info:
         new_atoms.info['target_atoms'] = atoms.info['target_atoms']
-    if 'free_energy' in atoms.info:
-        new_atoms.info['free_energy'] = atoms.info['free_energy']
     if 'pbc' in atoms.info:
         new_atoms.info['pbc'] = atoms.info['pbc']
 
