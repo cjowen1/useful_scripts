@@ -24,7 +24,7 @@ for atoms in atoms_list:
         new_atoms.info['stress'] = atoms.info['stress']
     if 'target_atoms' in atoms.info:
         new_atoms.info['target_atoms'] = atoms.info['target_atoms']
-    if 'pbc' in atoms.info:
+    if 'pbc' in atoms.info: # may return "F F F" regardless, so check results
         new_atoms.info['pbc'] = atoms.info['pbc']
 
     # Iterate through the available arrays and copy them to the new Atoms object, except for 'magmoms'
