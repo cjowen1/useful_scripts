@@ -10,7 +10,7 @@
 #SBATCH --gpus-per-task=1
 #SBATCH --gpu-bind=none
 #SBATCH --mail-type=begin,end,fail
-#SBATCH --mail-user=cowen@g.harvard.edu,xiey@g.harvard.edu
+#SBATCH --mail-user=email@g.harvard.edu,email@g.harvard.edu
 
 module list
 
